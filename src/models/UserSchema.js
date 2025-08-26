@@ -1,8 +1,7 @@
-import { required } from "joi";
 import mongoose from "mongoose";
 
-const UserSchema = mongoose.Schema({
-  firstName: {
+const UserSchema = new mongoose.Schema({
+  fName: {
     type: String,
     required: true,
   },
@@ -22,7 +21,6 @@ const UserSchema = mongoose.Schema({
   },
   address: {
     type: String,
-    required: true,
   },
   contact: {
     type: String,

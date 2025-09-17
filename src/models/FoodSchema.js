@@ -9,6 +9,10 @@ const FoodSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  expiry: {
+    type: number,
+    required: true,
+  },
 });
 
 export default mongoose.model("food", FoodSchema);
